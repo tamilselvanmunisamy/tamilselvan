@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== SEO META TAGS ===== -->
+  <title>Tamilselvan M | Software Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Tamilselvan M, a final-year Computer Science Engineering student and aspiring Software Engineer skilled in Java, Python, SQL, and web development.">
+  <meta name="keywords" content="Tamilselvan M, Software Engineer, CSE Student, Portfolio, Java Developer, Python Developer, Web Developer">
+  <meta name="author" content="Tamilselvan M">
+  <meta name="robots" content="index, follow">
+
+  <!-- ===== OPEN GRAPH TAGS ===== -->
+  <meta property="og:title" content="Tamilselvan M | Software Engineer Portfolio">
+  <meta property="og:description" content="Final Year CSE Student | Aspiring Software Engineer. Explore my projects, skills, and certifications.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/profile-placeholder.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- ===== FAVICON PLACEHOLDER ===== -->
+  <link rel="icon" type="image/png" href="assets/icons/favicon-placeholder.png">
+
+  <!-- ===== GOOGLE FONTS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ===== FONT AWESOME ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- ===== CUSTOM CSS ===== -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ LOADING ANIMATION ============ -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span>T</span><span>M</span>
+    </div>
+  </div>
+
+  <!-- ============ CUSTOM CURSOR / BACKGROUND BLOBS ============ -->
+  <div class="bg-blob blob-one" aria-hidden="true"></div>
+  <div class="bg-blob blob-two" aria-hidden="true"></div>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="#hero" class="logo">Tamilselvan<span>.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark/light mode">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-text fade-in">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Tamilselvan M</h1>
+          <h2 class="hero-role">
+            <span id="typedText"></span><span class="cursor-blink">|</span>
+          </h2>
+          <p class="hero-desc">
+            I am a passionate Computer Science Engineering student with strong knowledge of
+            Java, Python, SQL, HTML, CSS, and JavaScript. I enjoy solving problems, learning
+            new technologies, and developing software applications. I am currently looking
+            for an entry-level Software Engineer opportunity.
+          </p>
+          <div class="hero-buttons">
+            <a href="assets/resume/resume-placeholder.pdf" class="btn btn-primary" download>
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+            <a href="#projects" class="btn btn-ghost">
+              <i class="fa-solid fa-diagram-project"></i> View Projects
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-image slide-up">
+          <div class="hero-image-ring">
+            <div class="hero-image-placeholder">
+              <i class="fa-solid fa-user-graduate"></i>
+              <p>Profile Photo<br><span>Replace: assets/images/profile-placeholder.png</span></p>
+            </div>
+          </div>
+          <div class="float-icon icon-java" title="Java"><i class="fa-brands fa-java"></i></div>
+          <div class="float-icon icon-python" title="Python"><i class="fa-brands fa-python"></i></div>
+          <div class="float-icon icon-js" title="JavaScript"><i class="fa-brands fa-js"></i></div>
+          <div class="float-icon icon-git" title="Git"><i class="fa-brands fa-git-alt"></i></div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section-eyebrow">Get To Know Me</p>
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-grid">
+          <div class="about-card fade-in">
+            <div class="about-icon"><i class="fa-solid fa-user"></i></div>
+            <h3>Introduction</h3>
+            <p>
+              I'm Tamilselvan M, a final-year Computer Science Engineering student who loves
+              turning ideas into working software. My interests span backend development,
+              databases, and building clean, user-friendly applications.
+            </p>
+          </div>
+
+          <div class="about-card fade-in">
+            <div class="about-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <h3>Career Objective</h3>
+            <p>
+              To secure an entry-level Software Engineer role where I can apply my programming
+              skills, keep learning modern technologies, and contribute to building reliable,
+              impactful software products.
+            </p>
+          </div>
+
+          <div class="about-card fade-in">
+            <div class="about-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3>Education Summary</h3>
+            <p>
+              Currently pursuing B.E. in Computer Science Engineering
+              <span class="placeholder-tag">[College Name Placeholder]</span>,
+              expected to graduate in <span class="placeholder-tag">[Year Placeholder]</span>
+              with a CGPA of <span class="placeholder-tag">[CGPA Placeholder]</span>.
+            </p>
+          </div>
+
+          <div class="about-card fade-in">
+            <div class="about-icon"><i class="fa-solid fa-star"></i></div>
+            <h3>Strengths</h3>
+            <ul class="strengths-list">
+              <li><i class="fa-solid fa-check"></i> Strong problem-solving mindset</li>
+              <li><i class="fa-solid fa-check"></i> Quick learner of new technologies</li>
+              <li><i class="fa-solid fa-check"></i> Good communication & teamwork</li>
+              <li><i class="fa-solid fa-check"></i> Dedicated and detail-oriented</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS SECTION ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <p class="section-eyebrow">What I Bring</p>
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-grid">
+          <div class="skill-category fade-in">
+            <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
+            <div class="skill-item">
+              <div class="skill-label"><span>Java</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Python</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>SQL</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>C</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category fade-in">
+            <h3><i class="fa-solid fa-globe"></i> Web Technologies</h3>
+            <div class="skill-item">
+              <div class="skill-label"><span>HTML</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>CSS</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>JavaScript</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category fade-in">
+            <h3><i class="fa-solid fa-toolbox"></i> Tools</h3>
+            <div class="skill-item">
+              <div class="skill-label"><span>Git</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>GitHub</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>VS Code</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Eclipse</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category fade-in">
+            <h3><i class="fa-solid fa-people-arrows"></i> Soft Skills</h3>
+            <div class="skill-item">
+              <div class="skill-label"><span>Problem Solving</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Communication</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Teamwork</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Quick Learner</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS SECTION ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-eyebrow">My Work</p>
+        <h2 class="section-title">Projects</h2>
+
+        <div class="filter-bar" id="projectFilter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="app">App</button>
+          <button class="filter-btn" data-filter="ml">ML / Data</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Repeated placeholder project cards: replace data-* and inner content when ready -->
+          <article class="project-card fade-in" data-category="all">
+            <div class="project-thumb">
+              <i class="fa-solid fa-image"></i>
+              <span>Project Image Placeholder</span>
+            </div>
+            <div class="project-body">
+              <h3>Add Project Later</h3>
+              <p>Project description will be updated later.</p>
+              <div class="project-tags"><span>Add Later</span></div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="all">
+            <div class="project-thumb">
+              <i class="fa-solid fa-image"></i>
+              <span>Project Image Placeholder</span>
+            </div>
+            <div class="project-body">
+              <h3>Add Project Later</h3>
+              <p>Project description will be updated later.</p>
+              <div class="project-tags"><span>Add Later</span></div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="all">
+            <div class="project-thumb">
+              <i class="fa-solid fa-image"></i>
+              <span>Project Image Placeholder</span>
+            </div>
+            <div class="project-body">
+              <h3>Add Project Later</h3>
+              <p>Project description will be updated later.</p>
+              <div class="project-tags"><span>Add Later</span></div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="all">
+            <div class="project-thumb">
+              <i class="fa-solid fa-image"></i>
+              <span>Project Image Placeholder</span>
+            </div>
+            <div class="project-body">
+              <h3>Add Project Later</h3>
+              <p>Project description will be updated later.</p>
+              <div class="project-tags"><span>Add Later</span></div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="all">
+            <div class="project-thumb">
+              <i class="fa-solid fa-image"></i>
+              <span>Project Image Placeholder</span>
+            </div>
+            <div class="project-body">
+              <h3>Add Project Later</h3>
+              <p>Project description will be updated later.</p>
+              <div class="project-tags"><span>Add Later</span></div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="all">
+            <div class="project-thumb">
+              <i class="fa-solid fa-image"></i>
+              <span>Project Image Placeholder</span>
+            </div>
+            <div class="project-body">
+              <h3>Add Project Later</h3>
+              <p>Project description will be updated later.</p>
+              <div class="project-tags"><span>Add Later</span></div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS SECTION ============ -->
+    <section class="section section-alt" id="certifications">
+      <div class="container">
+        <p class="section-eyebrow">Verified Learning</p>
+        <h2 class="section-title">Certifications</h2>
+
+        <div class="cert-gallery" id="certGallery">
+          <div class="cert-card fade-in" data-category="all">
+            <div class="cert-thumb">
+              <i class="fa-solid fa-certificate"></i>
+              <span>Certificate Image Placeholder</span>
+            </div>
+            <div class="cert-body">
+              <h3>Certificate Name Placeholder</h3>
+              <p>Issuing Organization Placeholder</p>
+              <a href="#" class="btn btn-small">View Certificate</a>
+            </div>
+          </div>
+
+          <div class="cert-card fade-in" data-category="all">
+            <div class="cert-thumb">
+              <i class="fa-solid fa-certificate"></i>
+              <span>Certificate Image Placeholder</span>
+            </div>
+            <div class="cert-body">
+              <h3>Certificate Name Placeholder</h3>
+              <p>Issuing Organization Placeholder</p>
+              <a href="#" class="btn btn-small">View Certificate</a>
+            </div>
+          </div>
+
+          <div class="cert-card fade-in" data-category="all">
+            <div class="cert-thumb">
+              <i class="fa-solid fa-certificate"></i>
+              <span>Certificate Image Placeholder</span>
+            </div>
+            <div class="cert-body">
+              <h3>Certificate Name Placeholder</h3>
+              <p>Issuing Organization Placeholder</p>
+              <a href="#" class="btn btn-small">View Certificate</a>
+            </div>
+          </div>
+
+          <div class="cert-card fade-in" data-category="all">
+            <div class="cert-thumb">
+              <i class="fa-solid fa-certificate"></i>
+              <span>Certificate Image Placeholder</span>
+            </div>
+            <div class="cert-body">
+              <h3>Certificate Name Placeholder</h3>
+              <p>Issuing Organization Placeholder</p>
+              <a href="#" class="btn btn-small">View Certificate</a>
+            </div>
+          </div>
+
+          <div class="cert-card fade-in" data-category="all">
+            <div class="cert-thumb">
+              <i class="fa-solid fa-certificate"></i>
+              <span>Certificate Image Placeholder</span>
+            </div>
+            <div class="cert-body">
+              <h3>Certificate Name Placeholder</h3>
+              <p>Issuing Organization Placeholder</p>
+              <a href="#" class="btn btn-small">View Certificate</a>
+            </div>
+          </div>
+
+          <div class="cert-card fade-in" data-category="all">
+            <div class="cert-thumb">
+              <i class="fa-solid fa-certificate"></i>
+              <span>Certificate Image Placeholder</span>
+            </div>
+            <div class="cert-body">
+              <h3>Certificate Name Placeholder</h3>
+              <p>Issuing Organization Placeholder</p>
+              <a href="#" class="btn btn-small">View Certificate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION SECTION ============ -->
+    <section class="section" id="education">
+      <div class="container">
+        <p class="section-eyebrow">My Journey</p>
+        <h2 class="section-title">Education</h2>
+
+        <div class="timeline">
+          <div class="timeline-item fade-in">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>B.E. Computer Science Engineering</h3>
+              <p class="timeline-org">[College Name Placeholder], [University Placeholder]</p>
+              <p class="timeline-meta">Expected Graduation: [Year Placeholder] &bull; CGPA: [CGPA Placeholder]</p>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Higher Secondary Education (12th)</h3>
+              <p class="timeline-org">[School Name Placeholder]</p>
+              <p class="timeline-meta">Year: [Year Placeholder] &bull; Percentage: [Percentage Placeholder]</p>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Secondary Education (10th)</h3>
+              <p class="timeline-org">[School Name Placeholder]</p>
+              <p class="timeline-meta">Year: [Year Placeholder] &bull; Percentage: [Percentage Placeholder]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESUME SECTION ============ -->
+    <section class="section section-alt" id="resume">
+      <div class="container">
+        <p class="section-eyebrow">My Background</p>
+        <h2 class="section-title">Resume</h2>
+
+        <div class="resume-box fade-in">
+          <div class="resume-preview">
+            <i class="fa-solid fa-file-pdf"></i>
+            <p>Resume Preview Placeholder<br><span>Replace: assets/resume/resume-placeholder.pdf</span></p>
+          </div>
+          <div class="resume-info">
+            <h3>Tamilselvan M — Resume</h3>
+            <p>A quick overview of my education, skills, and projects — ready to download.</p>
+            <a href="assets/resume/resume-placeholder.pdf" class="btn btn-primary" download>
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS SECTION ============ -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <p class="section-eyebrow">Recognition</p>
+        <h2 class="section-title">Achievements</h2>
+
+        <div class="achievements-grid">
+          <div class="achievement-card fade-in">
+            <div class="achievement-icon"><i class="fa-solid fa-trophy"></i></div>
+            <h3>Achievement Title Placeholder</h3>
+            <p>Achievement description will be added later.</p>
+          </div>
+          <div class="achievement-card fade-in">
+            <div class="achievement-icon"><i class="fa-solid fa-medal"></i></div>
+            <h3>Achievement Title Placeholder</h3>
+            <p>Achievement description will be added later.</p>
+          </div>
+          <div class="achievement-card fade-in">
+            <div class="achievement-icon"><i class="fa-solid fa-award"></i></div>
+            <h3>Achievement Title Placeholder</h3>
+            <p>Achievement description will be added later.</p>
+          </div>
+          <div class="achievement-card fade-in">
+            <div class="achievement-icon"><i class="fa-solid fa-star"></i></div>
+            <h3>Achievement Title Placeholder</h3>
+            <p>Achievement description will be added later.</p>
+          </div>
+        </div>
+
+        <div class="counters">
+          <div class="counter-item">
+            <h3 class="counter" data-target="6">0</h3>
+            <p>Projects Built</p>
+          </div>
+          <div class="counter-item">
+            <h3 class="counter" data-target="6">0</h3>
+            <p>Certifications</p>
+          </div>
+          <div class="counter-item">
+            <h3 class="counter" data-target="8">0</h3>
+            <p>Technologies</p>
+          </div>
+          <div class="counter-item">
+            <h3 class="counter" data-target="100">0</h3>
+            <p>% Dedication</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <p class="section-eyebrow">Let's Connect</p>
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact-grid">
+          <div class="contact-info fade-in">
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>[email-placeholder]@example.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>[+91-Phone-Placeholder]</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-brands fa-linkedin"></i>
+              <div>
+                <h4>LinkedIn</h4>
+                <p>[linkedin.com/in/placeholder]</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-brands fa-github"></i>
+              <div>
+                <h4>GitHub</h4>
+                <p>[github.com/placeholder]</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Location</h4>
+                <p>[City, State, Country Placeholder]</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form fade-in" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-status" id="formStatus"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">Tamilselvan<span>.</span></a>
+        <p>Final Year CSE Student &bull; Aspiring Software Engineer</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Tamilselvan M. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============ BACK TO TOP BUTTON ============ -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
